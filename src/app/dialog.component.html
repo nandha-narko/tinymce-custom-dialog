@@ -1,0 +1,7 @@
+<h1 mat-dialog-title>Select an Animal</h1>
+  <div mat-dialog-content>
+    <p *ngFor="let animal of animals" (click)="onAnimalSelect(animal)">{{ animal }}</p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCloseClick()">Close</button>
+  </div>
